@@ -2,7 +2,11 @@ import style from './app.module.css';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import { fieldScheme } from './input_validation_scheme/validationSchema'
-import {onSubmit} from './constant/constant'
+
+
+const onSubmit = (formData) => {
+	console.log(formData);
+};
 
 
 export const App = () => {
